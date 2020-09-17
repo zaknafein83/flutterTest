@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 
-class MyHomePage extends StatefulWidget {
+class MyHomePage extends StatelessWidget {
   MyHomePage({Key key, this.title}) : super(key: key);
 
-  _HomePageState createState() => _HomePageState();
   final String title;
 
   @override
@@ -20,9 +19,4 @@ class MyHomePage extends StatefulWidget {
           ],
         ));
   }
-}
-
-class _HomePageState extends State<MyHomePage> {
-  @override
-  Widget build(BuildContext context) {}
 }

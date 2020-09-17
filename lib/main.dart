@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutterTest/introduzione.dart';
+import 'package:flutterTest/secondaPagina.dart';
 
 void main() {
   runApp(MyApp());
@@ -16,7 +17,12 @@ class MyApp extends StatelessWidget {
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       // home: MyHomePage(title: 'Gestione attività tramite Firebase'),
-      home: Introduzione(),
+      // home: Introduzione(),
+      initialRoute: '/',
+      routes: <String, WidgetBuilder>{
+        '/': (context) => Introduzione(),
+        '/secondaSchermata': (context) => SecondPage(),
+      },
     );
   }
 }

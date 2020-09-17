@@ -44,7 +44,7 @@ class _MySecondPageState extends State<MySecondPage> {
                     color: Colors.lightBlueAccent,
                     onPressed: () {
                       print("clicked");
-                      Navigator.of(context).pop();
+                      Navigator.popAndPushNamed(context, '/');
                     }),
               ]),
               Column(children: [

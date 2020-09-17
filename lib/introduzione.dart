@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
-import 'secondaPagina.dart';
 
 class Introduzione extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: MyBodyHomepage(),
+    return Scaffold(
+      body: MyBodyHomepage(),
     );
   }
 }
@@ -61,10 +60,7 @@ class _MyBodyHomepageState extends State<MyBodyHomepage> {
                       color: Colors.lightBlueAccent,
                       onPressed: () {
                         print("clicked");
-                        Navigator.push(context,
-                            MaterialPageRoute<void>(builder: (context) {
-                          return SecondPage();
-                        }));
+                        Navigator.pushNamed(context, '/secondaSchermata');
                       }),
                 ]),
               )

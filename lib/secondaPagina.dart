@@ -17,9 +17,9 @@ class MySecondPage extends StatefulWidget {
 class _MySecondPageState extends State<MySecondPage> {
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-      child: Scaffold(
-          body: Container(
+    return Scaffold(
+      body: SafeArea(
+          child: Container(
         padding: const EdgeInsets.all(32.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -44,7 +44,7 @@ class _MySecondPageState extends State<MySecondPage> {
                     color: Colors.lightBlueAccent,
                     onPressed: () {
                       print("clicked");
-                      Navigator.pop(context);
+                      Navigator.of(context).pop();
                     }),
               ]),
               Column(children: [

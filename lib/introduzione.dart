@@ -18,9 +18,9 @@ class MyBodyHomepage extends StatefulWidget {
 class _MyBodyHomepageState extends State<MyBodyHomepage> {
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-      child: Scaffold(
-          body: Container(
+    return Scaffold(
+      body: SafeArea(
+          child: Container(
         padding: const EdgeInsets.all(32.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,

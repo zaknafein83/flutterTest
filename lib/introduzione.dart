@@ -60,7 +60,7 @@ class _MyBodyHomepageState extends State<MyBodyHomepage> {
                       color: Colors.lightBlueAccent,
                       onPressed: () {
                         print("clicked");
-                        Navigator.pushNamed(context, '/secondaSchermata');
+                        Navigator.pushNamed(context, '/sp');
                       }),
                 ]),
               )

@@ -1,20 +1,20 @@
 import 'package:flutter/material.dart';
 
-class SecondPage extends StatelessWidget {
+class ThirdPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: MySecondPage(),
+      body: MyThirdPage(),
     );
   }
 }
 
-class MySecondPage extends StatefulWidget {
+class MyThirdPage extends StatefulWidget {
   @override
-  _MySecondPageState createState() => _MySecondPageState();
+  _MyThirdPageState createState() => _MyThirdPageState();
 }
 
-class _MySecondPageState extends State<MySecondPage> {
+class _MyThirdPageState extends State<MyThirdPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -30,7 +30,7 @@ class _MySecondPageState extends State<MySecondPage> {
               children: [
                 Expanded(
                   child: Text(
-                    "Questa è la seconda pagina della navigazione",
+                    "Ultima pagina, adesso accederemo alla vera e propria applicazione!",
                   ),
                 )
               ],
@@ -44,18 +44,18 @@ class _MySecondPageState extends State<MySecondPage> {
                     color: Colors.lightBlueAccent,
                     onPressed: () {
                       print("clicked");
-                      Navigator.popAndPushNamed(context, '/');
+                      Navigator.popAndPushNamed(context, '/sp');
                     }),
               ]),
               Column(children: [
                 FlatButton(
                     child: Text(
-                      "Prosegui",
+                      "Fine",
                     ),
                     color: Colors.lightBlueAccent,
                     onPressed: () {
                       print("clicked");
-                      Navigator.pushNamed(context, '/tp');
+                      Navigator.pushNamed(context, '/login');
                     }),
               ])
             ]),

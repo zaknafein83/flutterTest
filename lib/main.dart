@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutterTest/introduzione.dart';
+import 'package:flutterTest/login.dart';
 import 'package:flutterTest/secondaPagina.dart';
+import 'package:flutterTest/terzaPagina.dart';
 
 void main() {
   runApp(MyApp());
@@ -21,7 +23,9 @@ class MyApp extends StatelessWidget {
       initialRoute: '/',
       routes: <String, WidgetBuilder>{
         '/': (context) => Introduzione(),
-        '/secondaSchermata': (context) => SecondPage(),
+        '/sp': (context) => SecondPage(),
+        '/tp': (context) => ThirdPage(),
+        '/login': (context) => Login(),
       },
     );
   }

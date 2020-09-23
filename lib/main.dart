@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutterTest/introduzione.dart';
-import 'package:flutterTest/login.dart';
-import 'package:flutterTest/secondaPagina.dart';
-import 'package:flutterTest/terzaPagina.dart';
+import 'package:flutterTest/schermate/introduzione.dart';
+import 'package:flutterTest/schermate/login.dart';
+import 'package:flutterTest/schermate/postList.dart';
+import 'package:flutterTest/schermate/secondaPagina.dart';
+import 'package:flutterTest/schermate/terzaPagina.dart';
 
 void main() {
   runApp(MyApp());
@@ -26,6 +27,7 @@ class MyApp extends StatelessWidget {
         '/sp': (context) => SecondPage(),
         '/tp': (context) => ThirdPage(),
         '/login': (context) => Login(),
+        '/postList': (context) => PostList(),
       },
     );
   }

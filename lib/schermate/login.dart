@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutterTest/homepage.dart';
-import 'package:flutterTest/sign_in.dart';
+import 'package:flutterTest/schermate/homepage.dart';
+import 'package:flutterTest/utilities/sign_in.dart';
 
 class Login extends StatelessWidget {
   @override

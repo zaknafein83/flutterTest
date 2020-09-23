@@ -10,8 +10,8 @@ String imageUrl;
 
 Future<String> signInWithGoogle() async {
   await Firebase.initializeApp();
-
   final GoogleSignInAccount googleSignInAccount = await googleSignIn.signIn();
+
   final GoogleSignInAuthentication googleSignInAuthentication =
       await googleSignInAccount.authentication;
 
@@ -33,9 +33,6 @@ Future<String> signInWithGoogle() async {
     name = user.displayName;
     email = user.email;
     imageUrl = user.photoURL;
-    if (name.contains(" ")) {
-      name = name.substring(0, name.indexOf(" "));
-    }
 
     final User currentUser = _auth.currentUser;
     assert(user.uid == currentUser.uid);
